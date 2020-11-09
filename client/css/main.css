@@ -1,0 +1,107 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* background-image: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-47.jpg"); */
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  font-family: 'Francois One', sans-serif;
+  font-size: 92px;
+  font-weight: bolder;
+  padding: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #ffffff;
+}
+
+.field {
+  display:flex;
+  position:relative;
+  margin:5em auto;
+  width:70%;
+  flex-direction:row;
+  border-radius: 1em;
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+  font-size: 1em;
+}
+
+.field>input[type=text] {
+  flex: 1;
+  padding: 0.6em;
+  border: 0.2em solid #2F4F4F;
+}
+
+.field>button {
+  padding: 0.6em 0.8em;
+  background-color: #2F4F4F;
+  color: white;
+  border: none;
+}
+
+#searchform {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#searchterm {
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+#mentions-container, #sentiments-container {
+  width: 60%;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  border: 0.2em solid #2F4F4F;
+  font-size: 85%;
+}
+
+#sentiments-container {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.tick line{
+  opacity: 0.2;
+}
+
+.line {
+    fill: none;
+    stroke: navy;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+}
+
+.axis {
+    fill: solid;
+    stroke: black;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+svg
+{
+  stroke-width: 3px;
+}
+
+#mentions-graph, #sentiments-graph {
+  padding-top: 15px;
+}
+
+.xAxis path, .yAxis path
+{
+  stroke: #474747;
+  fill: none;
+}
+
+path.plot {
+  stroke: #FFA319;
+}

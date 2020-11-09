@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <title>
+      Company Sense
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <h1>
+      <b>Company Sense</b>
+    </h1>
+
+    <div class="field" id="searchform">
+      <input type="text" id="searchterm" placeholder="Looking for..." />
+      <button type="button" class="btn" id="search">Sentiment it!</button>
+    </div>
+
+    <div class="card" id="mentions-container" style="display: none;">
+      <svg id="mentions-graph">
+      </svg>
+    </div>
+
+    <div class="card" id="sentiments-container" style="display: none;">
+      <svg id="sentiments-graph">
+      </svg>
+    </div>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
